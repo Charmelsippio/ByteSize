@@ -12,11 +12,11 @@ export class MypageComponent {
   }
 }
 
-export default angular.module('myApp', [uiRouter])
+export default angular.module('mypage', [uiRouter])
   .config(routes)
   .component('mypage', {
     template: require('./mypage.html'),
-    controller: MyrouteComponent,
+    controller: MypageComponent, //forgot to change this to "mypage" and it gave me a console error. 
     controllerAs: 'mypageCtrl'
   })
   .name;

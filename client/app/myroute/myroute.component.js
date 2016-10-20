@@ -12,7 +12,7 @@ export class MyrouteComponent {
   }
 }
 
-export default angular.module('myApp', [uiRouter])
+export default angular.module('myroute', [uiRouter])
   .config(routes)
   .component('myroute', {
     template: require('./myroute.html'),

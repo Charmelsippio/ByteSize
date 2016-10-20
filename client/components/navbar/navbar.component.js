@@ -7,7 +7,16 @@ export class NavbarComponent {
   menu = [{
     title: 'Home',
     state: 'main'
+  },
+  {
+    title: 'My Page',
+    state: 'mypage'
+  },
+  {
+    title: 'My Route',
+    state: 'myroute'
   }];
+
   isLoggedIn: Function;
   isAdmin: Function;
   getCurrentUser: Function;
@@ -26,6 +35,6 @@ export class NavbarComponent {
 export default angular.module('directives.navbar', [])
   .component('navbar', {
     template: require('./navbar.html'),
-    controller: NavbarComponent
+    controller: NavbarComponent,
   })
   .name;
